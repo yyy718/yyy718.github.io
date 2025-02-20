@@ -1,0 +1,1608 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+		<title>电子书导航 - 奔跑中的奶酪</title>
+		<meta name="color-scheme" content="light dark">
+		<link rel="stylesheet" href="https://www.runningcheese.com/css/markdown.css">
+		<!--<script type='text/javascript' src='toc.js'></script>-->
+        <a id="github-fork-ribbon" href="https://www.runningcheese.com/aaa" target="_blank" data-ribbon="查看完整内容！" title="查看完整内容！"></a>
+	    <style> #github-fork-ribbon {width: 12.1em;height: 12.1em;position: absolute;overflow: hidden;top: 0;right: 0;z-index: 9999;pointer-events: none;font-size: 13px;text-decoration: none;}#github-fork-ribbon.fixed {position: fixed;}#github-fork-ribbon:active, #github-fork-ribbon:hover {background-color: rgba(0,0,0,0);}#github-fork-ribbon:after, #github-fork-ribbon:before {position: absolute;display: block;width: 15.38em;height: 1.54em;top: 3.23em;right: -3.23em;box-sizing: content-box;transform: rotate(45deg);}#github-fork-ribbon:before {content: "";padding: .38em 0;background-color: #000;background-image: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,.15));box-shadow: 0 .15em .23em 0 rgba(0,0,0,.5);pointer-events: auto;}#github-fork-ribbon:hover:before {background-color: #a00;}#github-fork-ribbon:after {content: attr(data-ribbon);color: #fff;font: 700 1em "Helvetica Neue",Helvetica,Arial,sans-serif;line-height: 1.54em;text-decoration: none;text-shadow: 0 -.08em rgba(0,0,0,.5);text-align: center;text-indent: 0;padding: .15em 0;margin: .15em 0;border-width: .08em 0;border-style: dotted;border-color: #fff;border-color: rgba(255,255,255,.7);}#github-fork-ribbon.left-bottom, #github-fork-ribbon.left-top {right: auto;left: 0;}#github-fork-ribbon.left-bottom, #github-fork-ribbon.right-bottom {top: auto;bottom: 0;}#github-fork-ribbon.left-bottom:after, #github-fork-ribbon.left-bottom:before, #github-fork-ribbon.left-top:after, #github-fork-ribbon.left-top:before {right: auto;left: -3.23em;}#github-fork-ribbon.left-bottom:after, #github-fork-ribbon.left-bottom:before, #github-fork-ribbon.right-bottom:after, #github-fork-ribbon.right-bottom:before {top: auto;bottom: 3.23em;}#github-fork-ribbon.left-top:after, #github-fork-ribbon.left-top:before, #github-fork-ribbon.right-bottom:after, #github-fork-ribbon.right-bottom:before {transform: rotate(-45deg);}</style>
+
+	
+	  <style>
+      .callapse .item .title {
+      display: flex;
+      align-items: center;
+      line-height: 40px;
+      }
+
+     .callapse .item .title::after{
+      content: '';
+      display: block;
+      width: 7px;
+      height: 7px;
+      border-top: 1px solid #303030;
+      border-right: 1px solid #303030;
+      margin-left: auto;
+      transform: rotate(45deg);
+      transition: all .5s;
+      margin-bottom: -10px;
+    }
+
+    .callapse .item.active .title::after{
+      transform:rotate(135deg) !important;
+    }
+
+      .callapse .item.active .content {
+        height: auto;
+      }
+
+      .callapse .item .content {
+        height: 0;
+        overflow: hidden !important;
+        transition: all 0.3s;
+      }
+    </style>
+
+
+
+	</head>
+	<body>
+	<article class="markdown-body">
+
+<p align="center"> <a href="javascript:! function() {%22use strict%22;const e = [%22article%22, %22section%22, %22main%22, %22content%22, %22#article%22, %22.article%22, %22#main%22, %22.main%22, %22#content%22, %22.content%22, %22#post%22, %22.post%22, %22body%22], n = %22h1, h2, h3, h4, h5, h6%22;let _;const l = () => {const o = [];let _ = 0;for (const t of e) if (document.querySelectorAll(t).length) {document.querySelectorAll(t).forEach(t => {t.querySelectorAll(n).forEach(t => {var e;o.push(t), t.id ? t.dataset.headerMark = t.id : (e = %22toc_index_%22 + _++, t.dataset.headerMark = e, t.id = e) }) });break }let l = '<li class=%22toc_menu_item_title%22>目录大纲</li>';if (o.length) {let _ = +o[0].tagName.replace(/H/g, %22%22), n = 0;o.forEach(t => {var e = +t.tagName.replace(/H/g, %22%22);n = n + e - _, n = n < 0 ? 0 : n, _ = e;const o = document.createElement(%22span%22);o.innerText = t.innerText, l += `<li class=%22toc_menu_item toc_header_level_` + n + `%22><a href=%22#` + t.dataset.headerMark + '%22>' + o.innerHTML + `</a></li>` }) }return l += '<li class=%22toc_menu_item_footer%22></li>', l };(() => {const t = document.createElement(%22div%22);_ = t.attachShadow({mode: %22open%22 }), t.id = %22toc_menu_root%22, _.innerHTML = `<style>#toc_menu_root {position: fixed;left: 0;top: 0;max-width: 360px;height: 100%;z-index: 2147483647;backdrop-filter: blur(8px);}#toc_menu_root.toc_hidden {width: 18px;height: 18px;}#toc_menu_root.toc_hidden > ul#toc_menu_list {display: none;}#toc_menu_root > #toc_toggle_button {position: absolute;width: 36px;height: 36px;left: -18px;top: -18px;background: #0063dc;border-radius: 18px;}#toc_menu_root > #toc_toggle_button:hover {background: #0063dc;}#toc_menu_root > ul#toc_menu_list {box-sizing: border-box !important;margin: 0;padding: 24px 18px 18px;height: 100%;overflow: scroll;background: rgba(255, 255, 255, .9);}#toc_menu_root > ul#toc_menu_list > li.toc_menu_item,#toc_menu_root > ul#toc_menu_list > li.toc_menu_item_title,#toc_menu_root > ul#toc_menu_list > li.toc_menu_item_footer {list-style: none !important;margin: 0;padding: 0;font-size: 16px;border-left: 3px solid rgba(255, 255, 255, 0);}#toc_menu_root > ul#toc_menu_list > li.toc_menu_item_title {font-size: 22px;font-weight: 700;border-bottom: 1px solid #CCCCCF;margin-bottom: 5px;color:#000;}#toc_menu_root > ul#toc_menu_list > li.toc_menu_item:hover {background: #F3F3F3;border-left: 3px solid #AAAAAC;}#toc_menu_root > ul#toc_menu_list > li.toc_menu_item > a,#toc_menu_root > ul#toc_menu_list > li.toc_menu_item > a:visited {display: block;padding: 2px .5em;font-size: 16px;font-weight: 400;line-height: 1.6;color: #222226;text-decoration: none;}#toc_menu_root > ul#toc_menu_list > li.toc_menu_item > a:hover,#toc_menu_root > ul#toc_menu_list > li.toc_menu_item > a:active {color: #0063dc;}#toc_menu_root > ul#toc_menu_list > li.toc_header_level_0 > a,#toc_menu_root > ul#toc_menu_list > li.toc_header_level_0 > a:visited {font-weight: 700;}#toc_menu_root > ul#toc_menu_list > li.toc_header_level_1 {padding-left: 1em;}#toc_menu_root > ul#toc_menu_list > li.toc_header_level_2 {padding-left: 2em;}#toc_menu_root > ul#toc_menu_list > li.toc_header_level_3 {padding-left: 3em;}#toc_menu_root > ul#toc_menu_list > li.toc_header_level_4 {padding-left: 4em;}#toc_menu_root > ul#toc_menu_list > li.toc_header_level_5 {padding-left: 5em;}#toc_menu_root > ul#toc_menu_list > li.toc_menu_item_footer {font-size: 14px;color: #99999C;}#toc_menu_root > ul#toc_menu_list > li.toc_menu_item_footer > a {color: #AAAAAE;text-decoration: none;}#toc_menu_root > ul#toc_menu_list > li.toc_menu_item_footer > a:hover {color: #0063dc;}</style><div id=%22toc_menu_root%22><div id=%22toc_toggle_button%22></div><ul id=%22toc_menu_list%22></ul></div>`, document.querySelector(%22html%22).appendChild(t);const e = _.querySelector(%22#toc_menu_root%22), o = _.querySelector(%22#toc_menu_list%22);o.innerHTML = l(), _.querySelector(%22#toc_toggle_button%22).addEventListener(%22click%22, () => {e.classList.toggle(%22toc_hidden%22), e.classList.contains(%22toc_hidden%22) ? o.innerHTML = %22%22 : o.innerHTML = l() }) })() }();void(0);(function(){var night=function(w){(function(d){var css='.callapse .item .content{overflow:hidden!important;height:auto!important;}';var s=d.getElementsByTagName('style');for(var i=0,si;si=s[i];i++){if(si.innerHTML==css){si.parentNode.removeChild(si);return}};var heads=d.getElementsByTagName('head');if(heads.length){var node=d.createElement('style');node.type='text/css';node.appendChild(d.createTextNode(css));heads[0].appendChild(node)}})(w.document);for(var i=0,f;f=w.frames[i];i++){try{arguments.callee(f)}catch(e){}}};night(window)})();"><img src="https://www.runningcheese.com/css/s22logo.png" width="148" height="148"/></a></p> 
+
+<h1 align="center">电子书导航</h1>
+<p align="center">没有找不到的电子书，就怕你没时间看！</p>
+<p align="center">最后更新：2023-09-27</p>
+<p align="center">点击图标有惊喜</p>
+
+
+
+
+<p>&nbsp;</p>
+<h2>目录</h2>
+<table>
+<thead>
+<tr>
+<th><a href="https://www.runningcheese.cn/s16">S16-BT 导航</a></th>
+<th><a href="https://www.runningcheese.cn/s17">S17-音乐导航</a></th>
+<th><a href="https://www.runningcheese.cn/s18">S18-影视导航</a></th>
+<th><a href="https://www.runningcheese.cn/s19">S19-网盘导航</a></th>
+<th><a href="https://www.runningcheese.cn/s20">S20-软件导航</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.runningcheese.cn/s21">S21-Zlibrary</a></td>
+<td><a href="https://www.runningcheese.cn/s22">S22-电子书导航</a></td>
+<td>S23-学术导航</td>
+<td>S24-考研导航</td>
+<td>S25-学习导航</td>
+</tr>
+<tr>
+<td>S26-生活导航</td>
+<td>S27-游戏导航</td>
+<td>S28-工具导航</td>
+<td>S29-网站导航</td>
+<td>S30-资源导航</td>
+</tr>
+</tbody>
+</table>
+
+<div class="container">
+<div class="callapse">
+
+
+<p>&nbsp;</p>
+<div class="item">
+<h2 class="title">1、Z-library</h2>
+<div class="content">
+
+<table>
+<thead>
+<tr>
+<th>▼ <strong>官方网站</strong></th>
+<th><strong>简介</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🌐 Z-lib 登陆页</td>
+<td>地址 1：<a href="https://singlelogin.re，需要魔法。">https://singlelogin.re，需要魔法。</a></td>
+</tr>
+<tr>
+<td>🌐 Z-lib 登陆页</td>
+<td>地址 2：<a href="https://singlelogin.site">https://singlelogin.site</a>，需要魔法。</td>
+</tr>
+<tr>
+<td>🔷 Z-lib 扩展</td>
+<td>地址：<a href="https://zh.go-to-zlibrary.se/soft/mozilla-addon-latest.xpi">Firefox</a>、<a href="https://t.cn/A60EmvZL">Chrome</a>。</td>
+</tr>
+<tr>
+<td>📥 Z-lib 桌面端</td>
+<td><a href="https://zh.go-to-zlibrary.se">官方客户端</a>，支持 Windows、Mac、Linux，不需要魔法就能使用。</td>
+</tr>
+<tr>
+<td>📱 Z-lib 手机端</td>
+<td>仅支持 Android，目前 v1.10.1 版本，需要魔法。</td>
+</tr>
+<tr>
+<td>📥 Z-lib TG 机器人</td>
+<td>一种是 <strong>Premium bot</strong>，一种是 <strong>Basic bot</strong>，需要魔法。</td>
+</tr>
+<tr>
+<td>📥 Z-lib Tor 浏览器</td>
+<td>对普通用户来说，这方法比较难理解，可略过，需要魔法。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>▼ <strong>民间项目</strong></td>
+<td><strong>简介</strong></td>
+</tr>
+<tr>
+<td>🌐 <a href="https://zh.annas-archive.org/">Anna&#39;s Archive</a></td>
+<td>网友 <strong>Anna</strong> 爬取的 Z-library 资源，并 IPFS 化，数据到 2022 年 12月 。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://github.com/book-searcher-org/book-searcher">Book Searcher</a></td>
+<td>网友将 <strong>Anna&#39;s Archive</strong> 数据库做成的索引项目，通过 <strong>IPFS 网关</strong>下载。</td>
+</tr>
+<tr>
+<td>↳ <a href="https://bk.hallowlib.org">bk.hallowlib.org</a></td>
+<td>国内效仿 <strong>Anna&#39;s Archive</strong> 的网站。</td>
+</tr>
+<tr>
+<td>↳ <a href="https://zbook.lol">zbook.lol</a></td>
+<td>基于 <strong>Book Searcher</strong> 的搜索网站。</td>
+</tr>
+<tr>
+<td>↳ <a href="https://zlib.awesc.com">zlib.awesc.com</a></td>
+<td>基于 <strong>Book Searcher</strong> 的搜索网站。</td>
+</tr>
+<tr>
+<td>↳ <a href="https://zlibsearch.1kbtool.com">zlib.1kbtool.com</a></td>
+<td>基于 <strong>Book Searcher</strong> 的搜索网站。</td>
+</tr>
+<tr>
+<td>↳ <a href="https://zlib.knat.network">zlib.knat.network</a></td>
+<td>基于 <strong>Book Searcher</strong> 的搜索网站。（无网关）</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://search.zhelper.net/?[{&quot;name&quot;:&quot;Ylibrary&quot;,&quot;url&quot;:&quot;https://api.ylibrary.org&quot;,&quot;type&quot;:&quot;full&quot;,&quot;sensitive&quot;:false,&quot;detail&quot;:true}]">Ylibrary</a></td>
+<td>Zlibrary 书库 + 超星书库，是目前最好的中文电子书搜索引擎。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>▼ <strong>下载方式</strong></td>
+<td><strong>简介</strong></td>
+</tr>
+<tr>
+<td>🌐 IPFS 下载</td>
+<td><strong>去中心化</strong>的网络文件存储系统，常见 IPFS 网关：<a href="https://dweb.link">链接1</a>、<a href="https://gateway.pinata.cloud">链接2</a>、<a href="https://ipfs.best-practice.se">链接3</a></td>
+</tr>
+<tr>
+<td>🌐 网关检查</td>
+<td>网关检查工具：<a href="https://ipfs.github.io/public-gateway-checker">链接1</a>、<a href="https://ipfs-checker.1kbtool.com">链接2</a>，延迟越低越好。</td>
+</tr>
+<tr>
+<td>🌐 秒传链接</td>
+<td>网盘的自动链接机制，</td>
+</tr>
+<tr>
+<td>↳ 脚本方式 1</td>
+<td>地址：<a href="https://greasyfork.org/zh-CN/scripts/427628">https://greasyfork.org/zh-CN/scripts/427628</a></td>
+</tr>
+<tr>
+<td>↳ 脚本方式 2</td>
+<td>地址：<a href="https://greasyfork.org/zh-CN/scripts/468633">https://greasyfork.org/zh-CN/scripts/468633</a></td>
+</tr>
+<tr>
+<td>↳ Token方式 1</td>
+<td>地址：<a href="https://ipfs.github.io/public-gateway-checker">https://ipfs.github.io/public-gateway-checker</a></td>
+</tr>
+<tr>
+<td>↳ Token方式 2</td>
+<td>地址：<a href="https://ipfs-checker.1kbtool.com">https://ipfs-checker.1kbtool.com</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>▼ <strong>下载选择</strong></td>
+<td><strong>简介</strong></td>
+</tr>
+<tr>
+<td>📖 首选</td>
+<td><strong>Z-library</strong></td>
+</tr>
+<tr>
+<td>📖 次选</td>
+<td><strong>Book Searcher</strong>（Anna&#39;s Archive 在内地速度慢，甚至无法下载）</td>
+</tr>
+<tr>
+<td>📖 冷门</td>
+<td><strong>Ylibrary</strong></td>
+</tr>
+<tr>
+<td>📖 末选</td>
+<td><strong>Zhelper</strong></td>
+</tr>
+</tbody>
+</table>
+ 
+
+ </div>
+ </div>
+
+<div class="item">
+<h2 class="title">2、超星</h2>
+<div class="content">
+
+<table>
+<thead>
+<tr>
+<th>▼ <strong>搜索网站</strong></th>
+<th><strong>简介</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🌐 <a href="https://www.soushu.vip/">搜书网</a></td>
+<td>超星图书搜索引擎。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://findbooks.eu.org/">找书网</a></td>
+<td>超星图书搜索引擎。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://freembook.com/">FreeMbook</a></td>
+<td>超星图书搜索引擎。<a href="https://t.me/freembook_channel">TG 频道</a>、<a href="https://t.me/freembook">TG群</a></td>
+</tr>
+<tr>
+<td>🌐 <a href="https://search.zhelper.net/?[{&quot;name&quot;:&quot;ylib-slib2&quot;,&quot;url&quot;:&quot;https://slib2.ylibrary.org/&quot;,&quot;sensitive&quot;:false,&quot;detail&quot;:false,&quot;display&quot;:{&quot;h&quot;:[&quot;info&quot;],&quot;detail&quot;:[&quot;code&quot;]}}]">Zhelper Search</a></td>
+<td>超星图书搜索引擎。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.xueshu86.com/">互助联盟</a></td>
+<td>超星图书搜索引擎。[<a href="https://greasyfork.org/zh-CN/scripts/420751">互助脚本</a>]</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>▼ <strong>秒传脚本</strong></td>
+<td><strong>简介</strong></td>
+</tr>
+<tr>
+<td>📜 <a href="https://greasyfork.org/zh-CN/scripts/468633">秒传转存助手</a></td>
+<td>支持 PC 及移动端，永久无广告绿色版，推荐。</td>
+</tr>
+<tr>
+<td>📜 <a href="https://greasyfork.org/zh-CN/scripts/427628">秒传链接提取</a></td>
+<td>用于提取和生成百度网盘秒传链接。</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+
+
+<div class="item">
+<h2 class="title">3、搜索引擎</h2>
+<div class="content">
+
+<p>最基础的找书方法，是在百度、必应、谷歌这样的搜索引擎里，用“<strong>书名+关键字</strong>”的方法搜索。</p>
+<p>但是，你还可以用下面这些垂直搜索引擎，搜索更加精准。</p>
+
+<table>
+<thead>
+<tr>
+<th>▼ <strong>搜索网站</strong></th>
+<th>简介</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🌐 <a href="https://bookpan.net/">布克盘</a></td>
+<td>布克盘聚合书籍数据库，用 <strong><a href="https://search.zhelper.net/?[{%22name%22:%22bookpan%22,%22url%22:%22https://api.bookpan.net%22,%22type%22:%22light%22,%22sensitive%22:false,%22detail%22:true}]">zhelper search</a></strong> 搜索。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://zhiso.top">知搜</a></td>
+<td>收录了多家电子书网站，同时标记了网站的使用说明。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.soushu.vip">搜书网</a></td>
+<td>会显示搜索结果的类型，比如会显示网站是否能打开，是否需要收费等。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.taolinks.cc/s/">淘链客</a></td>
+<td>搜索内容来自搜索引擎、各大网盘或第三方网站，理工类书籍较多。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.jiumodiary.com">鸠摩搜索</a></td>
+<td>知名电子书搜索引擎，主要是收录各大网盘网站的内容结果。</td>
+</tr>
+<tr>
+<td>🌐 <a href="http://21c58170t7.imdo.co:5001/find">冀缘巧豫</a></td>
+<td>搜索结果为阿里云网盘，支持上传电子书功能。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.upyunso.com">UP云搜</a></td>
+<td>搜索结果为阿里云网盘。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://bks.thefuture.top">TheFuture</a></td>
+<td>搜索结果为蓝奏云网盘。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.shudan.vip">每日书单</a></td>
+<td>搜索结果为城通网盘。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.mrsd.top/">莫若书单</a></td>
+<td>搜索结果为城通网盘。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.shukui.net/">书葵网</a></td>
+<td>搜索结果以 BT 磁力。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.tacoso.cc">Taco搜索</a></td>
+<td>除了支持搜索电子书，还支持“<strong>文档搜索</strong>”。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://filepursuit.com/">FilePursuit</a></td>
+<td>神级资源搜索站，支持电子书、音乐、视频、软件、压缩包等，支持中文。</td>
+</tr>
+</tbody>
+</table>
+<p>这里特别说一下 <a href="https://filepursuit.com">FilePursuit</a>。</p>
+<p>它不但支持电子书、音频、视频、软件、压缩包等文件，就算被下架的资源也能搜索得到，而且还支持中文。</p>
+
+</div>
+</div>
+
+
+<div class="item">
+<h2 class="title">4、博客论坛</h2>
+<div class="content">
+
+<table>
+<thead>
+<tr>
+<th>▼ <strong>博客网站</strong></th>
+<th>简介</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🌐 <a href="https://www.book123.info/">无名图书</a></td>
+<td>免注册、自建网盘下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://kgbook.com/">苦瓜书盘</a></td>
+<td>免注册、自建网盘下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.sanqiu.mobi/">三秋书屋</a></td>
+<td>免注册、多种网盘下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.youyidu.xyz/">有益读</a></td>
+<td>免注册、多种网盘下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://ibooks.org.cn/">读书小站</a></td>
+<td>免注册、多种网盘下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.zhishikoo.com/">知识库</a></td>
+<td>免注册、百度网盘下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="http://www.eybook.com/">风陵渡书屋</a></td>
+<td>免注册、百度网盘下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.bluestep.cc/books/">蓝文资源库</a></td>
+<td>免注册、百度网盘下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.52doc.com/">我爱电子书</a></td>
+<td>免注册、百度网盘下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://huoan.net/">火岸电子书资源</a></td>
+<td>免注册、百度网盘下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="http://www.rejoiceblog.com/">rejoice</a></td>
+<td>免注册、城通网盘下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.sulery.com/">书乐里</a></td>
+<td>免注册、城通网盘下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.iyd.wang/">爱悦读</a></td>
+<td>免注册、城通网盘下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.epubooks.top/">EpubBook</a></td>
+<td>免注册、城通网盘下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://ebooklist.mobi/">书单</a></td>
+<td>免注册、城通网盘下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="http://www.duodu.cc/">多读</a></td>
+<td>免注册、城通网盘下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="http://www.happydot.top/">热点图书网</a></td>
+<td>免注册、城通网盘下载。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>▼ <strong>合集下载</strong></td>
+<td><strong>简介</strong></td>
+</tr>
+<tr>
+<td>🌐 <a href="https://http561856124.wordpress.com/">多读书，读好书</a></td>
+<td>免注册、城通网盘下载，合集打包下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="http://mydbfx.com/?page_id=12170">我的打包分享</a></td>
+<td>免注册、城通网盘下载，合集打包下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://atimebook.com/">时光图书馆</a></td>
+<td>免注册、百度网盘下载，合集打包下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.yueduxiu.vip/">懿古今</a></td>
+<td>免注册、多种网盘下载，合集打包下载。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>▼ <strong>关注公众号</strong></td>
+<td><strong>简介</strong></td>
+</tr>
+<tr>
+<td>🌐 <a href="https://sobooks.net/">SoBooks </a></td>
+<td>免注册、但需要关注公众号。</td>
+</tr>
+<tr>
+<td>🌐 <a href="http://www.4bei.com/">四倍书屋</a></td>
+<td>免注册、但需要关注公众号。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.shuzhou.cc/">书舟搜索</a></td>
+<td>免注册、但需要关注公众号。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.nmod.net/">NMOD 电子书</a></td>
+<td>免注册、但需要关注公众号。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.xiangshibook.com/">相识电子书</a></td>
+<td>免注册、但需要关注公众号。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://ebooklist.mobi/">书单</a></td>
+<td>免注册、但需要关注公众号。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://ibooks.org.cn/">读书小站</a></td>
+<td>免注册、但需要关注公众号。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://book.519.best/">519电子书资源网</a></td>
+<td>免注册、但需要关注公众号。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>▼ <strong>需要付费</strong></td>
+<td><strong>简介</strong></td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.soepub.com/">掌上书苑</a></td>
+<td>付费、但可以做为书目参考。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.bluestep.cc/">蓝文资源库</a></td>
+<td>付费、但可以做为书目参考。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>▼ <strong>论坛网站</strong></td>
+<td><strong>简介</strong></td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.obook.cc/">偶书</a></td>
+<td>要注册、还需要回复，还有类似于豆瓣的小组</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://bbs.yibook.org/">易书论坛</a></td>
+<td>要注册、国内一个专门于找书的论坛。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://forum.mobilism.org/viewforum.php?f=19">Mobilism eBook </a></td>
+<td>要注册、知名国外资源论坛，英文原版书下载。</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+
+
+<div class="item">
+<h2 class="title">5、PDF 书籍</h2>
+<div class="content">
+
+
+<table>
+<thead>
+<tr>
+<th>▼ <strong>英文 PDF </strong></th>
+<th><strong>简介</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🌐 <a href="https://www.pdfdrive.com/">PDF Drive</a></td>
+<td>英文 PDF，同时也支持中文搜索。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://epdf.tips/">EPDF.TIPS</a></td>
+<td>英文 PDF。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://pdfcookie.com">PDFCookie</a></td>
+<td>英文 PDF。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://pdfcoffee.com/">PDFCoffee</a></td>
+<td>英文 PDF。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://oiipdf.com/">OiiPDF</a></td>
+<td>英文 PDF。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://docero.tips/">Docero.tips</a></td>
+<td>英文 PDF。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://pdfslide.net/">PDFSlide</a></td>
+<td>英文 PDF。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://d-pdf.com/">D-PDF</a></td>
+<td>英文 PDF。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://yes-pdf.com/">Yes PDF</a></td>
+<td>英文 PDF。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.z-epub.com/">Z-ePub</a></td>
+<td>英文 PDF。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>▼ <strong>中文 PDF</strong></td>
+<td><strong>简介</strong></td>
+</tr>
+<tr>
+<td>🌐 <a href="https://pdfzj.com/">PDF之家</a></td>
+<td>免注册、阿里网盘下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://yabook.org/">雅书</a></td>
+<td>免注册、城通网盘下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.sxpdf.com/">书行天下</a></td>
+<td>免注册、城通网盘下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.gpdf.net/">书行万里</a></td>
+<td>免注册、城通网盘下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.werebook.com/">书堆阅读</a></td>
+<td>免注册、城通网盘下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="http://www.nziyuan.com/">N资源书吧</a></td>
+<td>免注册、城通网盘下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="http://www.ctfile.cn/">全索引</a></td>
+<td>免注册、城通网盘下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.guligirl.com/">古丽电子书</a></td>
+<td>免注册、城通网盘下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="http://www.minxue.net/">敏学网</a></td>
+<td>免注册、城通网盘下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="http://www.pdfbook.cn/">个人学习网</a></td>
+<td>免注册、城通网盘下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://vikingcabin.com/">维京小屋</a></td>
+<td>免注册、城通网盘下载。</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+
+
+<div class="item">
+<h2 class="title">6、英文书籍</h2>
+<div class="content">
+
+<p>&nbsp;</p>
+<table>
+<thead>
+<tr>
+<th>▼ <strong>开源项目</strong></th>
+<th><strong>简介</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🌐 <a href="https://www.gutenberg.org/">古腾堡计划</a></td>
+<td>最早的数字图书馆，书籍多为公有领域的书籍原本，以英文作品居多。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://openlibrary.org">Open Library</a></td>
+<td>由联合国教科文组织与公共团体合作建立，促进国际和文化间的相互理解。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://en.wikibooks.org/wiki/Main_Page">Wiki Books</a></td>
+<td>由维基百科建立。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://books.google.com/">Google Books</a></td>
+<td>由谷歌公司建立。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://archive.org/details/books">Internet Archive</a></td>
+<td>由网页时光机建立。[<a href="https://www.bilibili.com/video/BV1MV4y1471C/">下载方法</a>]</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>▼ <strong>免费网站</strong></td>
+<td><strong>简介</strong></td>
+</tr>
+<tr>
+<td>🌐 <a href="https://singlelogin.re">Zlibrary</a></td>
+<td>互联网最大免费电子书网站。</td>
+</tr>
+<tr>
+<td>🌐 <a href="http://libgen.rs/">Library Genesis</a></td>
+<td>Zlibrary 的平替。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.pdfdrive.com/">PDF Drive</a></td>
+<td>国外知名免费 PDF 电子书网站，提供约 8090万 册英文原版 PDF。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://openstax.org/">OpenStax</a></td>
+<td>Free Textbooks Online with No Catch国外的教材课件，包括多个学科。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.planetebook.com/">Planet eBook</a></td>
+<td>经典文学，主要提供小说类书籍下载；</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://manybooks.net/">Manybooks</a></td>
+<td>收集了超过 50000 本电子书，提供多种格式下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.e-booksdirectory.com/">E-Books Dir</a></td>
+<td>超过 10655 本 709 个分类的电子书。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://onlinebooks.library.upenn.edu/">TheOnlineBooks</a></td>
+<td>超过 300 万本可在网上免费阅读的在线图书的索引。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.forgottenbooks.com/en">Forgotten Books</a></td>
+<td>超过 1,294,132 本书可供在线阅读。</td>
+</tr>
+</tbody>
+</table>
+
+
+
+</div>
+</div>
+
+
+<div class="item">
+<h2 class="title">7、杂志期刊</h2>
+<div class="content">
+
+<table>
+<thead>
+<tr>
+<th>▼ <strong>中文杂志</strong></th>
+<th><strong>简介</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🌐 <a href="http://www.53bk.com/Baokan/">报刊在线阅读系统</a></td>
+<td>涵盖国内各大报纸和杂志，并支持在线阅读。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://laosheng.top/fly/">中国新闻云媒体</a></td>
+<td>涵盖国内各大媒体和新媒体，并支持在线阅读。</td>
+</tr>
+<tr>
+<td>🌐 <a href="http://qikan.lifves.com/">Lifves</a></td>
+<td>提供读者、意林、故事会、电脑爱好者等期刊在线阅读。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.thekono.com/">Kono 電子雜誌</a></td>
+<td>需要登陆。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.badianyike.com/">八点一刻</a></td>
+<td>博客，提供直接下载。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>▼ <strong>英文杂志</strong></td>
+<td><strong>简介</strong></td>
+</tr>
+<tr>
+<td>🌐 <a href="https://magazinelib.com/">MagazineLib</a></td>
+<td>全球免费英文杂志下载网站，无需注册即可直接下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://freemagazines.top/">Free Magazines</a></td>
+<td>在线免费英文杂志外刊下载网站，无需注册即可直接下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.freepdfmagazine.com/">Free PDF Magaz</a></td>
+<td>在线免费英文杂志外刊下载网站，无需注册即可直接下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://freemagazinepdf.com/">FreeMagazine</a></td>
+<td>在线免费英文杂志外刊下载网站，无需注册即可直接下载</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://github.com/hehonghui/awesome-english-ebooks">经济学人外刊杂志</a></td>
+<td>经济学人、纽约客、卫报、连线、大西洋月刊等杂志，每周更新。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>▼ <strong>辅助工具</strong></td>
+<td><strong>简介</strong></td>
+</tr>
+<tr>
+<td>🌐 <a href="https://github.com/iamadamdev/bypass-paywalls-chrome">Bypass Paywalls</a></td>
+<td>绕过付费订阅限制，查看金融时报、华尔街日报等 160+ 网站。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://greasyfork.org/zh-CN/scripts/449408">经济学人免费看</a></td>
+<td>经济学人解锁所有完整内容。</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+
+
+<div class="item">
+<h2 class="title">8、网文小说</h2>
+<div class="content">
+
+<table>
+<thead>
+<tr>
+<th>▼ <strong>小说搜索</strong></th>
+<th><strong>简介</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🌐 <a href="https://www.owlook.com.cn/">owllook</a></td>
+<td>小说搜索引擎。</td>
+</tr>
+<tr>
+<td>🌐 <a href="http://www.soduzw.com/">SoDu搜读</a></td>
+<td>小说搜索引擎。</td>
+</tr>
+<tr>
+<td>🌐 <a href="http://www.xgsoso.com/?st=8">西瓜搜搜</a></td>
+<td>小说搜索引擎，但以网盘资源为主。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.boyunso.com/">拨云搜索</a></td>
+<td>小说搜索引擎，可通过角色、剧情、专有词汇进行搜索。</td>
+</tr>
+<tr>
+<td><a href="https://booklink.me/">🌐 BookLink.Me</a></td>
+<td>小说搜索引擎，论坛，自称是最有爱的小说搜索引擎。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>▼ <strong>小说网站</strong></td>
+<td><strong>简介</strong></td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.69shuba.com/">69书吧</a></td>
+<td>更新快，无广告，精校过的小说阅读网站。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://beitai.cc/">备胎书屋</a></td>
+<td>一个小说爱好者搭建的小说网站。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://zxcs.dmnb.cf/">知轩藏书</a></td>
+<td>只收录全本、精校本小说，网盘文件夹的形式。[<a href="https://dl.askk.cc/ms/zxcs">镜像站</a>]、[<a href="https://www.aliyundrive.com/s/mToTEnxtGUp">阿里网盘</a>]</td>
+</tr>
+<tr>
+<td>🌐 <a href="http://www.yxgwx.com/">云轩阁</a></td>
+<td>分类很全。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.haodoo.net/">好讀</a></td>
+<td>繁体中文。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://kepub.net/">可阅文学网</a></td>
+<td>国内外经典文学小说在线阅读。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://github.com/guhhhhaa/4675-scifi">4675-scifi</a></td>
+<td>中文科幻小说自然语言处理语料库，大约有4675本科幻小说。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.sadtxt.com/">sadTxt</a></td>
+<td>小说下载电子书资源免费下载</td>
+</tr>
+<tr>
+<td>🌐 <a href="http://www.iyangcong.com/">爱洋葱</a></td>
+<td>无弹窗书友最值得收藏的网络小说</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.mianfeixiaoshuoyueduwang.com/">免费小说阅读网</a></td>
+<td>支持在线查看，有斗罗大陆、斗破苍穹等。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.uukanshu.com/">UU看书</a></td>
+<td>无弹窗小说网，各类小说阅读TXT下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.huangdizhijia.com/index.html">皇帝之家</a></td>
+<td>界面类似豆瓣的小说网站。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.ddxs.com/">顶点小说</a></td>
+<td>无弹窗广告的小说网站。</td>
+</tr>
+<tr>
+<td>🌐 <a href="http://www.1000qm.vip/">阡陌居</a></td>
+<td>华人地区的最大休闲文学讨论论坛。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.guiguaiwu.com/">鬼故事</a></td>
+<td>一个专门讲灵异鬼故事的网站。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>▼ <strong>小说阅读器</strong></td>
+<td><strong>简介</strong></td>
+</tr>
+<tr>
+<td>📥 <a href="https://github.com/binbyu/Reader">Reader</a></td>
+<td>支持 Win，简单的 TXT 阅读器。</td>
+</tr>
+<tr>
+<td>📥 <a href="https://www.52pojie.cn/thread-1795388-1-1.html">小强阅读 V6</a></td>
+<td>支持 Win，吾爱网友开发的小说阅读软件，聚合多个网站，开箱即用</td>
+</tr>
+<tr>
+<td>📥 <a href="https://apps.apple.com/cn/app/beyondcowtxtreader/id1344409961">超牛小说阅读器</a></td>
+<td>支持 Mac，专注纯文本小说阅读，管理和朗读的软件（收费）。</td>
+</tr>
+<tr>
+<td>📥 <a href="https://github.com/uncle-novel/uncle-novel">Uncle小说</a></td>
+<td>支持 Win、Mac、Linux，一个全网小说的下载器及阅读器。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>▼ <strong>小说 App</strong></td>
+<td><strong>简介</strong></td>
+</tr>
+<tr>
+<td>📥 <a href="https://gedoor.github.io/">开源阅读</a></td>
+<td>支持 Android，<a href="https://www.coolapk.com/apk/256030">酷安下载</a>，支持导入 [<a href="https://www.yckceo.com/yuedu/shuyuan/index.html">书源</a>]</td>
+</tr>
+<tr>
+<td>📥 <a href="https://423down.lanzouo.com/b0f1cdr9i">小说软件 App</a></td>
+<td>各种安卓小说 App 的去广告 VIP 会员版，由 423Down 维护。</td>
+</tr>
+<tr>
+<td>📥 <a href="https://www.stoneread.com/">石头阅读器</a></td>
+<td>支持 Android、iOS，支持小说的智能阅读。</td>
+</tr>
+<tr>
+<td>📥 <a href="https://github.com/eprendre/tingshu">我的听书</a></td>
+<td>支持 Android，可在线播放多个听书站点的 APP。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>▼ <strong>小说书源</strong></td>
+<td><strong>简介</strong></td>
+</tr>
+<tr>
+<td>🌐 <a href="https://legado.cn/forum-rssSources-1.html">开源阅读论坛</a></td>
+<td>论坛中有很多用户制作的书源，更新及时，涵盖各类网站。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.yckceo.com/">源仓库</a></td>
+<td>阅读/异次元源汇总。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://legado.aoaostar.com/">阅读 APP 源</a></td>
+<td>一些「阅读」小说书源、订阅源。</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+
+
+<div class="item">
+<h2 class="title">9、有声书</h2>
+<div class="content">
+
+<table>
+<thead>
+<tr>
+<th>▼ <strong>有声书</strong></th>
+<th><strong>简介</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🌐 <a href="https://www.lrts.me/">懒人听书</a></td>
+<td>满足各年龄、各类别收听人群的“全内容收听需求”。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.ximalaya.com/">喜马拉雅</a></td>
+<td>有声小说、听书、听小说、听故事、听广播</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.gotist.com/">得到主义</a></td>
+<td>用 AI 配音，让白嫖更优雅，但网站有时候打不开。</td>
+</tr>
+<tr>
+<td>🌐 <a href="http://www.tingdongfang.com/">听东方</a></td>
+<td>有声读物，各种内容题材的都有。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.yiyeting.com">一夜听书网</a></td>
+<td>有声小说在线听。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>▼ <strong>评书网站</strong></td>
+<td><strong>简介</strong></td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.pingshu365.com/">天天评书网</a></td>
+<td>评书、相声、有声小说</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.zgpingshu.com/">评书网</a></td>
+<td>评书、相声、有声小说</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.pingshu8.com/">评书吧</a></td>
+<td>评书、相声、有声小说</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.tingbook.com/">天方听书</a></td>
+<td>评书、相声、有声小说、要登录</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>▼ <strong>国外网站</strong></td>
+<td><strong>简介</strong></td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.scribd.com/">Scribd</a></td>
+<td>Ebooks, Audiobooks &amp; More - Read Free for 30 Days</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.readbeyond.it/ebooks.html">ReadBeyond</a></td>
+<td>国外名著朗读，并支持下载 epub 格式的有声电子书到本地。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://librivox.org/">LibriVox</a></td>
+<td>精品有声书，公共领域用品的有声电子书。</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+
+
+<div class="item">
+<h2 class="title">10、古籍</h2>
+<div class="content">
+
+<table>
+<thead>
+<tr>
+<th>▼ <strong>古文</strong></th>
+<th><strong>简介</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🌐 <a href="https://www.shuge.org/">书格</a></td>
+<td>自由开放的在线古籍图书馆。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.shidianguji.com/">识典古籍</a></td>
+<td>古籍在线阅读平台</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://cnkgraph.com/">知识图谱</a></td>
+<td>古籍领域的知识图谱。</td>
+</tr>
+<tr>
+<td>🌐 <a href="http://guoxue.er07.com/">爱如生论坛</a></td>
+<td>国学典籍。（需要登录）</td>
+</tr>
+<tr>
+<td>🌐 <a href="http://find.nlc.cn/">文津搜索</a></td>
+<td>古籍搜索。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.wenxianxue.cn/">中国古典文献导航</a></td>
+<td>古籍导航。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.zdic.net/">漢典</a></td>
+<td>古籍辞典。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.shuowen.org/">说文解字</a></td>
+<td>古籍辞典。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://jiapu.library.sh.cn/#/">中国家谱</a></td>
+<td>家谱检索。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://wenyuan.aliyun.com/home">汉典重光</a></td>
+<td>首批海外回归数字化古籍。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://ctext.org/search.pl?if=gb&amp;remap=gb">中国哲学书</a></td>
+<td>诸子百家电子化计划。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://5000yan.com/">5000言</a></td>
+<td>国学经典-传统文化。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.daodejing.org/">道德经网</a></td>
+<td>老子道德经全文及译文。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.8bei8.com/">太极书馆</a></td>
+<td>古籍经典。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.wenshuoge.com/">文硕阁</a></td>
+<td>累计收录 1.4 万本公共版权书籍，提供 pdf 和 epub 下载</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.neohytung.com/">瀚堂近代报刊</a></td>
+<td>近代报刊资料库。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>▼ <strong>古诗词</strong></td>
+<td><strong>简介</strong></td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.gushiwen.cn/">古诗文网</a></td>
+<td>古诗文经典传承。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://shici.store/huajianji/">中文诗歌</a></td>
+<td>最全中华古诗词数据库， 近 5.5 万首唐诗，26 万首宋诗。</td>
+</tr>
+<tr>
+<td>🌐 <a href="http://www.shiren.org/">中国诗人资料馆</a></td>
+<td>收藏古今中外数万名诗人的数十万首诗歌</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://github.com/Werneror/Poetry">非常全的古诗词数据</a></td>
+<td>收录了从先秦到现代的共计85万余首古诗词。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.guxuo.com/">梦远书城</a></td>
+<td>古典文学，包括唐诗、宋诗、戏曲、小说。</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+
+
+<div class="item">
+<h2 class="title">11、行业书籍</h2>
+<div class="content">
+
+<table>
+<thead>
+<tr>
+<th>▼ <strong>教材课件</strong></th>
+<th><strong>简介</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🌐 <a href="http://discx.yuntu.io/">联图云</a></td>
+<td>提供各类书籍的随书光盘下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="http://www.pptkj.net/">ppt课件网</a></td>
+<td>免费 PPT 课件下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="http://www.goodkejian.com/index.htm">好课件吧</a></td>
+<td>小学课件下载，无需注册免费下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.ruiwen.com/jiaocai/">瑞文网</a></td>
+<td>教材电子课本，需要关注公众号。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://book.sciencereading.cn/shop/main/Login/shopFrame.do">科学文库</a></td>
+<td>各类学科教材，但下载需要教育网 IP。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://basic.smartedu.cn/">智慧教育平台</a></td>
+<td>国家中小学智慧教育平台，人教版教育电子版下载。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>▼ <strong>儿童读物</strong></td>
+<td><strong>简介</strong></td>
+</tr>
+<tr>
+<td>🌐 <a href="https://bbs.ibabyzone.cn/showtype-15-153.html">宝宝地带</a></td>
+<td>儿童绘本在线阅读、儿童绘本下载</td>
+</tr>
+<tr>
+<td>🌐 <a href="http://www.huajuanma.com/">花卷妈</a></td>
+<td>儿童绘本下载。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>▼ <strong>医学百科</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>🌐 <a href="http://www.kanyixue.com/">看医学网</a></td>
+<td>需要关注公众号。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.med2.cn/">新叶医学网</a></td>
+<td>需要登陆。</td>
+</tr>
+<tr>
+<td>🌐 <a href="http://www.bzfxw.com/yiyao.html">学兔兔</a></td>
+<td>需要登陆，部分收费，可用淘宝代下。</td>
+</tr>
+<tr>
+<td>🌐 <a href="http://freebooks4doctors.com/">Medical Books</a></td>
+<td>英文，拥有 369 册医学电子书。</td>
+</tr>
+<tr>
+<td>🌐 <a href="http://www.a-hospital.com/">A+医学百科</a></td>
+<td>一个开放的在线医学百科全书网站。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.msdmanuals.cn/">默克诊疗手册</a></td>
+<td>涵盖了医学所有领域成千上万主题的广泛医学信息来源。</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+
+
+<div class="item">
+<h2 class="title">12、图书馆</h2>
+<div class="content">
+
+<table>
+<thead>
+<tr>
+<th>▼ <strong>图书馆</strong></th>
+<th><strong>简介</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🌐 <a href="https://www.nlc.cn/web/index.shtml">中国国家图书馆</a></td>
+<td>中国国家数字图书馆。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://atimebook.com/">时光图书馆</a></td>
+<td>杂志、老照片、古画、书法、连环画、乐谱、古籍等资源。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.modernhistory.org.cn/#/">抗日战争数据平台</a></td>
+<td>抗日战争与近代中日关系文献数据平台</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>▼ <strong>出版社</strong></td>
+<td><strong>简介</strong></td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.readinglife.com/">新经典</a></td>
+<td>中国国家数字图书馆</td>
+</tr>
+<tr>
+<td>🌐 <a href="http://www.zhbc.com.cn/zhsj/fg/home/home.html">中华书局有限公司</a></td>
+<td>中华书局有限公司</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.cp.com.cn/">商务印书馆</a></td>
+<td>商务印书馆</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.ilixiangguo.com/">理想国</a></td>
+<td>想象另一种可能</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://www.hinabook.com/">后浪出版公司</a></td>
+<td>后浪出版社</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://fangsuo.com/">方所图书馆</a></td>
+<td>广州方所图书馆</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+
+
+<div class="item">
+<h2 class="title">13、工具</h2>
+<div class="content">
+
+
+<table>
+<thead>
+<tr>
+<th>▼ <strong>辅助工具</strong></th>
+<th><strong>简介</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>📜 <a href="https://greasyfork.org/zh-CN/scripts/329484">豆瓣资源下载大师</a></td>
+<td>聚合数百家资源网站，通过右侧边栏告诉你哪里可以下载电子书。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://v.magiconch.com/epub-transform.html">ePub 繁简转换</a></td>
+<td>电子书繁简在线转换工具</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>▼ <strong>格式转化</strong></td>
+<td><strong>简介</strong></td>
+</tr>
+<tr>
+<td>🌐 <a href="http://cn.epubee.com/">ePubee 转换器</a></td>
+<td>支持在线转换。</td>
+</tr>
+<tr>
+<td>📥 <a href="https://neat-reader.cn/downloads/converter">Neat Reader</a></td>
+<td>支持 Win。</td>
+</tr>
+<tr>
+<td>📥 <a href="https://manual.calibre-ebook.com/conversion.html">Calibre</a></td>
+<td>支持 Win、Mac、Linux，综合性电子书工具，比较重。</td>
+</tr>
+<tr>
+<td>📥 <a href="https://github.com/Davy-Zhou/zip2pdf">zip2pdf</a></td>
+<td>基于 Python 自动化解压压缩包成 PDG，PDG 合成 PDF</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>▼ <strong>电子书格式</strong></td>
+<td><strong>简介</strong></td>
+</tr>
+<tr>
+<td>📖 可重排格式</td>
+<td>txt、rtf、doc、epub。epub 是首选，且最为广泛的格式。</td>
+</tr>
+<tr>
+<td>📖 亚马逊格式</td>
+<td>azw、azw3、mobi、kfx 都是亚马逊开发，现在只出版 kfx 格式了。</td>
+</tr>
+<tr>
+<td>📖 PDF 格式</td>
+<td>PDF 通用性最强，有可编辑版本（体积小）和不可编辑版本（体积大）。</td>
+</tr>
+<tr>
+<td>📖 扫描格式</td>
+<td>Djvu 是国外扫描格式，Pdg 是国内超星扫描格式。</td>
+</tr>
+<tr>
+<td>📖 知网格式</td>
+<td>CAJ 中国知网专门电子书格式，可转为 PDF。</td>
+</tr>
+<tr>
+<td>📖 其它格式</td>
+<td>exe、chm、ebk3、fb2、umd...</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+
+<div class="item">
+<h2 class="title">14、阅读器</h2>
+<div class="content">
+
+<table>
+<thead>
+<tr>
+<th>▼ <strong>桌面软件</strong></th>
+<th><strong>简介</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>📥 <a href="https://www.sumatrapdfreader.org/free-pdf-reader">Sumatra PDF</a></td>
+<td>支持 Win。界面一般，但是开源，支持广泛。</td>
+</tr>
+<tr>
+<td>📥 <a href="https://cread.jd.com/custom/custom_pcDownload.action">京东读书</a></td>
+<td>支持 Win、iOS、安卓。</td>
+</tr>
+<tr>
+<td>📥 <a href="https://reader.960960.xyz/#/manager/home">Koodo Reader</a></td>
+<td>支持 Win、Mac、Linux、Web。</td>
+</tr>
+<tr>
+<td>📥 <a href="https://neat-reader.cn/">Neat Reader</a></td>
+<td>支持 Win、Mac、iOS、安卓，付费。🪟by <a href="https://www.52pojie.cn/thread-1715250-1-1.html">@夜泉</a></td>
+</tr>
+<tr>
+<td>📥 <a href="https://apps.apple.com/cn/app/clearview-x/id1557106464?mt=12">Clearview X</a></td>
+<td>支持 Mac，付费。<a href="">🍎</a> by <a href="https://xclient.info/s/clearview-x.html">@Xclient</a></td>
+</tr>
+<tr>
+<td>📥 <a href="https://calibre-ebook.com/download">Calibre</a></td>
+<td>支持 Win、Mac、Linux，综合性电子书工具，比较重。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>▼ <strong>手机应用</strong></td>
+<td><strong>简介</strong></td>
+</tr>
+<tr>
+<td>📥 <a href="https://gedoor.github.io/">开源阅读</a></td>
+<td>支持 Android，支持导入 [<a href="https://www.yckceo.com/yuedu/shuyuan/index.html">书源</a>]</td>
+</tr>
+<tr>
+<td>📥 <a href="https://www.moondownload.com/chinese.html">静读天下</a></td>
+<td>支持 Android，获得 Google Play 顶级电子书阅读器荣誉。</td>
+</tr>
+<tr>
+<td>📥 <a href="https://ereader.link/">英阅阅读器</a></td>
+<td>支持  Android、iOS。蒙哥阅读器，支持英文小说，外刊杂志轻松读。</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+
+<div class="item">
+<h2 class="title">15、电子书资源</h2>
+<div class="content">
+
+<table>
+<thead>
+<tr>
+<th>▼ <strong>电子书资源</strong></th>
+<th><strong>简介</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🌐 <a href="https://pan.quark.cn/s/53bbffed27f2">34种行业电子书</a></td>
+<td>包括编程、财务、职场、营销、哲学、小说、销售等，夸克网盘下载。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://115.com/s/sw3tgk73fwm#i8e9">Freembook书籍</a></td>
+<td>Freembook 15.72万册书籍，有书目索引，密码：i8e9</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://pan.quark.cn/s/23ba4ef5edd5">CSDN 1000 本</a></td>
+<td>CSDN 会员免费电子书 1000 本。</td>
+</tr>
+<tr>
+<td>🌐 <a href="http://d.sundx.cn/">时光印记经典珍藏</a></td>
+<td>时光印记经典珍藏系列，各类书籍都有。</td>
+</tr>
+<tr>
+<td>🌐 <a href="https://pan.baidu.com/s/1OimRJxqUhAsUxpopEidehQ?pwd=ek2x">2023 樊登读书会</a></td>
+<td>2023 年度更新，提取码: ek2x。</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+
+<div class="item">
+<h2 class="title">结尾</h2>
+<div class="content">
+
+<p>本项目收集电子书内容，仅用于学习交流，切勿用于任何商业活动。</p>
+
+ </div>
+ </div>
+
+
+<script>
+      const $ = (s) => document.querySelector(s);
+      const $$ = (s) => [...document.querySelectorAll(s)];
+
+      class Collapse {
+        constructor($container, accordion = false) {
+          this.$$items = $container.querySelectorAll(".callapse .item");
+          this.$$itemTittles = $container.querySelectorAll(".callapse .title");
+          this.type = accordion;
+
+          this.bind();
+        }
+
+        bind() {
+          const _self = this;
+          this.$$itemTittles.forEach(($title) => {
+            $title.onclick = function () {
+              console.log(_self.type);
+              if (_self.type) {
+                _self.$$items.forEach((item) => {
+                  item.classList.remove("active");
+                });
+                this.parentElement.classList.toggle("active");
+              } else {
+                this.parentElement.classList.toggle("active");
+              }
+            };
+          });
+        }
+      }
+
+      new Collapse($$(".container")[0]);
+      new Collapse($$(".container")[1], true);
+    </script>
+
+
+
+
+
+
+</article></div></body></html>
